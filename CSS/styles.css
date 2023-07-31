@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+
+  background-image: url(https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -16,7 +27,7 @@ header, footer {
   background-color: #F05A28;
   height: 60px;
   justify-content: center;
-  color: white;
+  color: rgb(66, 53, 53);
 }
 
 header h1 {
@@ -38,35 +49,35 @@ footer span {
 
 .list {
   width: 250px;
-  border: 1px solid #F69C7E;
+  border: 2px solid #0a5c96;
   margin: 20px;
   border-radius: 10px;
-  color: #F69C7E;
+  color: #044d66;
 }
 
 .list .title {
-  margin: 5px 10px;
-  padding: 5px;
+  margin: 10px 10px;
+  padding: 10px;
 }
 
 .list .item {
-  padding: 5px;
-  border-bottom: 1px solid #F69C7E;
+  padding: 10px;
+  border-bottom: 1px solid #87290a;
 }
 
 .list input, button {
-  color: #F69C7E;
+  color: #76260b;
   margin-left: 5px;
 }
 
 .list button {
-  padding: 2px;
+  padding: 5px;
 }
 
 .heading {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid #F69C7E;
+  border-bottom: 1px solid #0a5c96;
 }
 
 .heading .title {
