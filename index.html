@@ -1,41 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Kanban Board Project</title>
-</head>
-<body>
-  <header class="flex">
-    <h1>
-      STPHN Kanban Board
-    </h1>
-  </header>
-  <div class="error"></div>
-  <div class="flex flex-one board">
-    <div class="list drop" id="requested">
-      <div class="heading">
-        <div class="title">New</div>
-        <div class="add">+</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <header class="flex">
+      <h1>
+        STPHN Kanban Board <span class="emoji">📝</span>
+        
+      </h1>
+    </header>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="New TODO..." id="todo-input" />
+        <button type="submit">Add +</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">New</h3>
+
+          <p class="task" draggable="true">Get New SSD</p>
+          <p class="task" draggable="true">Water Plants</p>
+          <p class="task" draggable="true">Troubleshoot & Debugging session</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Underway</h3>
+
+          <p class="task" draggable="true">Binge Ted Lasso</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Done</h3>
+
+          <p class="task" draggable="true">
+            Watch classic movies like The Godfather
+          </p>
+        </div>
       </div>
     </div>
-    <div class="list drop" id="in-progress">
-      <div class="heading">
-        <div class="title">In Progress</div>
-      </div>
-    </div>
-    <div class="list drop" id="done">
-      <div class="heading">
-        <div class="title">Done</div>
-      </div>
-    </div>
-  </div>
-  <footer class="flex">
-    <span>
-      &copy;2023 by STPHN
-    </span>
-  </footer>
-  <script src="kanban.js"></script>
-</body>
+    <footer class="flex">
+      <p>
+        Made with <span class="emoji">❤️</span> by
+        <a href="https://twitter.com/MandalorPrime" target="_blank"
+          >@MandalorPrime</a
+        >
+      </p>
+    </footer>
+    <script src="todo.js"></script>
+  </body>
 </html>
