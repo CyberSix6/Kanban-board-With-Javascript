@@ -36,7 +36,7 @@ header h1 {
 }
 
 footer span {
-  padding: 20px;
+  padding: 5px;
 }
 
 .flex {
@@ -53,21 +53,40 @@ footer span {
   margin: 20px;
   border-radius: 10px;
   color: #044d66;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px #0a5c96;
+  opacity: 0.95 !important;
+  font-size: 20px;
+  font: optional;
+
 }
 
 .list .title {
   margin: 10px 10px;
-  padding: 10px;
+  padding: 18px;
+  border-radius: 18px solid #87290a;
+  font-size: larger;
+  font-weight: bold;
+  font-style: times new roman;
+  color: #87290a;
+  text-align: center;
+  text-decoration: wavy;
+  
 }
 
 .list .item {
   padding: 10px;
   border-bottom: 1px solid #87290a;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 255, 255);
+  box-shadow: 5px 5px 5px #0a5c96;
 }
 
 .list input, button {
   color: #76260b;
   margin-left: 5px;
+  background-color: beige;
 }
 
 .list button {
