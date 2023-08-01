@@ -51,7 +51,7 @@ footer span {
 .list {
   width: 250px;
   border: 2px solid #0a5c96;
-  margin: 20px;
+  margin: 25px;
   border-radius: 10px;
   color: #044d66;
   background-color: aliceblue;
@@ -59,9 +59,11 @@ footer span {
   opacity: 0.95 !important;
   font-size: 20px;
   font: optional;
+  text-align: center;
   
 
 }
+
 
 .list .title {
   margin: 10px 10px;
@@ -83,6 +85,9 @@ footer span {
   justify-content: space-between;
   background-color: rgb(219, 255, 255);
   box-shadow: 5px 5px 5px #0a5c96;
+  gap: 28px;
+  align-items: center;
+  
 }
 
 .list input, button {
