@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   color: #F69C7E;
+  overflow: scroll;
 }
 
 header, footer {
@@ -58,6 +59,7 @@ footer span {
   opacity: 0.95 !important;
   font-size: 20px;
   font: optional;
+  
 
 }
 
