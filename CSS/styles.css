@@ -74,7 +74,7 @@ footer span {
   font-style: times new roman;
   color: #87290a;
   text-align: center;
-  text-decoration: wavy;
+  text-decoration: underline;
   
 }
 
@@ -86,7 +86,8 @@ footer span {
   background-color: rgb(219, 255, 255);
   box-shadow: 5px 5px 5px #0a5c96;
   gap: 28px;
-  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
   
 }
 
